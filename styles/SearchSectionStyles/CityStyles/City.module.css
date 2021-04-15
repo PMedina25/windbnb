@@ -1,0 +1,17 @@
+.cityContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 0 1rem 1rem;
+  cursor: pointer;
+}
+
+.cityContainer:hover {
+  background-color: var(--main-orange);
+  color: white;
+}
+
+.cityContainer span {
+  margin-left: 10px;
+}

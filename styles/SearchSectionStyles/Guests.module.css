@@ -1,0 +1,20 @@
+#guests {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 27px;
+  cursor: pointer;
+}
+
+.active {
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.1));
+  border-radius: 16px;
+}
+
+#addGuestsText {
+  color: var(--guests-gray);
+}

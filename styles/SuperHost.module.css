@@ -1,0 +1,14 @@
+.superHostContainer {
+  width: 100px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--super-host-color);
+  box-sizing: border-box;
+  border-radius: 12px;
+  color: var(--super-host-color);
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 10px;
+}

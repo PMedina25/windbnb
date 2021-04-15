@@ -1,19 +1,55 @@
 .container {
+  position: relative;
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 0 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.searchOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: var(--transition);
+  visibility: hidden;
+}
+
+.showOverlay {
+  visibility: visible;
+  z-index: 0;
+}
+
+.staysTitle {
+  margin-right: auto;
+  font-size: 24px;
+}
+
 .main {
-  padding: 5rem 0;
+  padding: 2rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.staysHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#homeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .footer {
