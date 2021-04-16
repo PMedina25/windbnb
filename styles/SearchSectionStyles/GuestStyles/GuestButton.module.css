@@ -1,0 +1,13 @@
+.guestButton {
+  width: 23px;
+  height: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--details-gray);
+  border: 1px solid var(--details-gray);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,34 @@
+#guestContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem 0;
+  font-family: 'Mulish';
+  font-size: 14px;
+}
+
+.guestType,
+.guestDescription {
+  margin-bottom: 5px;
+}
+
+.guestType {
+  font-weight: 700;
+}
+
+.guestDescription {
+  color: var(--details-gray);
+}
+
+.setGuestContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.setGuestContainer span {
+  margin: 0 15px;
+}

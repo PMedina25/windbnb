@@ -5,15 +5,10 @@ import styles from '../../styles/SearchSectionStyles/Location.module.css';
 import TitleText from './TitleText';
 
 const Location = () => {
-    const { city, country, isLocationSelected, setIsLocationSelected, setIsGuestsSelected } = useGlobalContext();
-
-    const onClickLocationHandler = () => {
-        setIsLocationSelected(true);
-        setIsGuestsSelected(false);
-    };
+    const { city, country, isLocationSelected, selectLocation } = useGlobalContext();
 
     return (
-        <div id={styles.location} className={`${isLocationSelected ? styles.active : ''}`} onClick={onClickLocationHandler}>
+        <div id={styles.location} className={`${isLocationSelected ? styles.active : ''}`} onClick={selectLocation}>
             <TitleText titleText="location" />
             <span>{city},&nbsp;{country}</span>
         </div>

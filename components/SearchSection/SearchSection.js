@@ -6,9 +6,10 @@ import Location from './Location';
 import Guests from './Guests';
 import SearchButton from './SearchButton';
 import CityList from './Cities/CityList';
+import GuestsContainer from './Guests/GuestsContainer';
 
 const SearchSection = () => {
-    const { showSearchSection } = useGlobalContext();
+    const { isLocationSelected, showSearchSection } = useGlobalContext();
 
     return (
         <div className={styles.searchSection + `${showSearchSection ? ' ' + styles.showSearchSection : ''}`}>
@@ -17,7 +18,10 @@ const SearchSection = () => {
                 <Guests />
                 <SearchButton />
             </div>
-            <CityList />
+
+            {
+                isLocationSelected ? <CityList /> : <GuestsContainer />
+            }
         </div>
     );
 };
